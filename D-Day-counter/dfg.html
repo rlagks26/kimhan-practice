@@ -18,9 +18,8 @@
 
     const counterMaker = function () {
       const targetDateInput = dataFormMaker()
-      console.log(targetDateInput);
       const nowDate = new Date();
-      const targetDate = new Date();
+      const targetDate = new Date(targetDateInput).setHours(0,0,0,0);
       const remaining = (targetDate - nowDate) / 1000;
 
       const remainingDate = Math.floor(remaining / 3600 / 24);
