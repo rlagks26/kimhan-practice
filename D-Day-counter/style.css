@@ -14,14 +14,16 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: darkgreen;
+    background: linear-gradient(to right, yellowgreen, cornflowerblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #start-btn {
     font-size: 1.3rem;
     color: white;
     background-color: darkslategrey;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 #d-day-container {
