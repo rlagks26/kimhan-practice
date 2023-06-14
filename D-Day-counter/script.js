@@ -1,4 +1,9 @@
+
+const container = document.querySelector('#d-day-container');
+container.style.display = 'none'
+
 const messageContainer = document.querySelector('#d-day-message');
+messageContainer.style.color = 'red';
 messageContainer.textContent = 'D-Day를 입력해 주세요.';
 
 const dataFormMaker = function () {
@@ -8,6 +13,7 @@ const dataFormMaker = function () {
 
     // const dateFormat = inputYear + '-' + inputMonth + '-' + inputDate;
     const dateFormat = `${inputYear}-${inputMonth}-${inputDate}`;
+    console.log(dateFormat); // 결과값을 출력
     return dateFormat;
     // console.log(inputYear, inputMonth, inputDate);
 };
